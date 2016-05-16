@@ -1,0 +1,26 @@
+#container {
+	/*margin: 0px auto;*/
+	width: 500px;
+	height: 375px;
+	border: 3px navy solid;
+	float: left;
+}
+#videoElement {
+	width: 500px;
+	height: 375px;
+	background-color: #666;
+}
+#canvas {
+	width: 500px;
+	height: 375px;
+	background-color: #CCC;
+	border: 3px green solid;
+}
+
+body{
+    background-color: black;
+    font-family: sans-serif;
+    color: #2EFE2E;
+}
+
+#buttonDownload{ color: limegreen;}

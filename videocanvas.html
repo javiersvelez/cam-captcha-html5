@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Cam CAPTCHA</title>
+
+		<link rel="stylesheet" type="text/css" href="style.css">
+
+	</head>
+
+	<body>
+		<!-- On iOS 6 we can use the file select input with the following attributes to capture an image from the camera
+		<input id="fileselect" type="file" accept="image/*" capture="camera"> -->
+
+		<h1>HTML5 Canvas Webcam CAPTCHA System</h1>
+		<h3>Javier S. Velez</h3>
+
+		<div id="container">
+			<video autoplay id="videoElement">
+
+			</video>
+		</div>
+
+		<canvas id="canvas" width="500" height="375"></canvas>
+
+		<!-- Used to capture frame from webcam video feed -->
+		<br>
+
+		<input type="button" value="Sample" id="buttonSample" />
+		<input type="button" value="Data" id="buttonData" />
+		<a download="muesttras.txt" id="buttonDownload" style="display: none">Download</a>
+
+		<script type="text/javascript" src="jquery-1.11.0.js"></script>
+		<script type="text/javascript" src="videocanvas.js"></script>
+		<script type="text/javascript" src="algoritmos.js"></script>
+		<script type="text/javascript" src="textfile.js"></script>
+	</body>
+</html>
