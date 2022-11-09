@@ -34,7 +34,7 @@ var video, canvas, context, w, h;
 $(document).ready(function() {
     // when DOM loaded, get canvas 2D context and store width and height of element
     canvas = document.getElementById('canvas');
-    context = canvas.getContext('2d');
+    context = canvas.getContext('2d', { willReadFrequently: true });
 
     _CANVASWIDTH = canvas.width;
     _CANVASHEIGHT = canvas.height;
