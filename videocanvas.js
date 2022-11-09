@@ -21,8 +21,8 @@ if (navigator.getUserMedia) {
 
 function handleVideo(stream) {
     // Attach feed to video element
-    video.src = window.URL.createObjectURL(stream);
-
+    //video.src = window.URL.createObjectURL(stream);  //Deprecated method createObjectURL
+    video.srcObject = stream
 }
 
 function videoError(e) {
@@ -51,7 +51,7 @@ $(document).ready(function() {
             imageData = context.getImageData(0, 0, w, h);
             var skinData = detectSkin(context, imageData);
 
-            //Deteccion y validacion
+            //Image detection and validation
             context.putImageData(skinData, 0, 0);
             validateSample(context, skinData);
             drawGuideLines(context);
